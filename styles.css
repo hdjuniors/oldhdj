@@ -1,0 +1,117 @@
+@media all and (min-width: 1000px) {
+  .game {
+    width: 30%;
+  }
+  .game p {
+    font-size: 1.5em;
+  }
+}
+@media all and (min-width: 750px) and (max-width: 1000px) {
+  .game {
+    width: 45%;
+  }
+  .game p {
+    font-size: 1.75em;
+  }
+}
+@media all and (max-width: 750px) {
+  .game {
+    width: 90%;
+  }
+  .game p {
+    font-size: 2em;
+  }
+}
+#container, html, body {
+  width: 100%;
+  min-height: 100%;
+}
+
+span {
+  font-family: "hdj";
+  margin: 0;
+}
+
+.menu {
+  background: #02EC64;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5px solid #02EC64;
+  box-shadow: 0px 10px 20px 0px white;
+  position: relative;
+  z-index: 1000;
+}
+.menu h1, .menu span {
+  font-size: 2rem;
+  padding-right: 0;
+}
+.menu a {
+  background: #4EC700;
+  padding: 0;
+}
+.menu * {
+  padding: 1em;
+  margin-right: 1em;
+  color: #FFF;
+}
+
+.games {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #02EC64;
+  min-height: calc(100vh - 7em + 8px);
+}
+.games .game {
+  height: auto;
+  margin: 1em;
+  background: #4EC700;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.games .game:hover {
+  cursor: pointer;
+}
+.games .game:hover img {
+  transform: scale(1.25);
+  transition: transform 0.5s;
+}
+.games .game img {
+  width: 95%;
+  height: auto;
+  overflow: hidden;
+  margin: 2.5%;
+  transition: transform 0.5s;
+}
+.games .game p {
+  text-align: center;
+  color: #FFF;
+  background: #4EC700;
+  padding: 0.25em;
+  position: relative;
+  z-index: 900;
+}
+
+.tutorial {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  z-index: 2000;
+  font-size: 1.5em;
+  padding: 0.25em 0.5em;
+  border: 2px solid orange;
+  border-radius: 10px;
+  background: crimson;
+  cursor: pointer;
+}

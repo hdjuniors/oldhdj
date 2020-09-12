@@ -1,0 +1,120 @@
+@import "_variables.sass"
+@import "_media-queries.sass"
+
+#container, html, body
+	width: 100%
+	min-height: 100%
+
+span
+	font-family: "hdj"
+	margin: 0
+
+.menu
+	background: $fondo_total
+
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+
+	border-bottom: 5px solid $fondo_total
+	-webkit-box-shadow: 0px 10px 20px 0px rgba(255,255,255,1)
+	-moz-box-shadow: 0px 10px 20px 0px rgba(255,255,255,1)
+	box-shadow: 0px 10px 20px 0px rgba(255,255,255,1)
+
+	position: relative
+	z-index: 1000
+
+	h1, span
+		font-size: 2rem
+		padding-right: 0
+
+	a
+		// background: lighten($fondo_total, 10)
+		background: $accent
+		padding: 0
+
+	*
+		padding: 1em
+		margin-right: 1em
+
+		color: $color
+
+.games
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+
+	background: $fondo_total
+
+	min-height: calc(100vh - 7em + 8px)
+	// La altura total - el titulo y los bordes inferiores
+
+	.game
+		height: auto
+
+		margin: 1em
+
+		background: $accent
+
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+
+		position: relative
+
+		overflow: hidden
+
+		&:hover
+			cursor: pointer
+
+			img
+				transform: scale(1.25)
+
+				transition: transform .5s
+
+		img
+			width: 95%
+			height: auto
+
+			overflow: hidden
+
+			margin: 2.5%
+
+			transition: transform .5s
+
+		p
+			text-align: center
+			color: $color
+
+			background: $accent
+
+			padding: .25em
+
+			position: relative
+			z-index: 900
+
+.tutorial
+	position: absolute
+	bottom: 1em
+	right: 1em
+	z-index: 2000
+
+	font-size: 1.5em
+
+	padding: .25em .5em
+	border: 2px solid orange
+	border-radius: 10px
+
+	background: crimson
+
+	cursor: pointer
